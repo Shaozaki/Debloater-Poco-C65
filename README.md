@@ -34,10 +34,11 @@ This script is **100% Safe** (Safe Mode). It only uninstalls apps for the curren
 2. Enable **USB Debugging** on your phone & connect to PC.
 3. Clone and run:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/poco-c65-debloater.git](https://github.com/YOUR_USERNAME/poco-c65-debloater.git)
-   cd poco-c65-debloater
+   git clone https://github.com/Shaozaki/Debloater-Poco-C65.git
+   cd Debloater-Poco-C65
    chmod +x debloat-poco.sh
    ./debloat-poco.sh
+   ```
 
 #### 🪟 Windows Users
 
@@ -58,7 +59,7 @@ If you are on Windows 10/11, you don't need to use the terminal. Just use the pr
     * Open the `platform-tools` folder.
     * Double-click on `debloat-poco.bat`.
     * A command window will appear and start the cleaning process automatically.
-    * Wait until finished, then restart your phone.edit 
+    * Wait until finished, then restart your phone.
 
 <a name="bahasa-indonesia"></a>
 ## 🇮🇩 Bahasa Indonesia
@@ -83,8 +84,8 @@ Script ini berjalan secara native menggunakan terminal.
     * Aktifkan **USB Debugging** di HP dan sambungkan ke Laptop.
     * Clone repo ini dan jalankan scriptnya:
       ```bash
-      git clone [https://github.com/USERNAME_ANDA/poco-c65-debloater.git](https://github.com/USERNAME_ANDA/poco-c65-debloater.git)
-      cd poco-c65-debloater
+      git clone https://github.com/Shaozaki/Debloater-Poco-C65.git
+      cd Debloater-Poco-C65
       
       # Beri izin eksekusi
       chmod +x debloat-poco.sh
