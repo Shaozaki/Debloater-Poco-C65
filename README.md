@@ -60,7 +60,7 @@ If you are on Windows 10/11, you don't need to use the terminal. Just use the pr
     * A command window will appear and start the cleaning process automatically.
     * Wait until finished, then restart your phone.edit 
 
-<a name="bahasa-indoesia"></a>
+<a name="bahasa-indonesia"></a>
 ## 🇮🇩 Bahasa Indonesia
 
 #### 🐧 Linux Users (CachyOS, Arch, Ubuntu, dll)
