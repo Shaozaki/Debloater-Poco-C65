@@ -83,12 +83,12 @@ You don't need a terminal, just use the provided `.bat` file.
     * Download the `debloat-poco.bat` file from the **[Releases](https://github.com/Shaozaki/Debloater-Poco-C65/releases)** section of this repo.
     * ⚠️ **IMPORTANT:** Move the `debloat-poco.bat` file **INSIDE** the `platform-tools` folder (it must be in the same folder as `adb.exe`).
 
-    > **How To Move `.bat` file to the `platform-tools` folder:**
-    > 1. Open the extracted `platform-tools` folder (usually in Downloads or where you unzipped it).
-    > 2. Find your downloaded `debloat-poco.bat` file.
-    > 3. Right-click the `debloat-poco.bat` file and choose **Copy**.
-    > 4. In the `platform-tools` folder, right-click an empty area and choose **Paste**.
-    > 5. Make sure `debloat-poco.bat` is inside the same folder as `adb.exe`.
+     **How To Move `.bat` file to the `platform-tools` folder:**
+     1. Open the extracted `platform-tools` folder (usually in Downloads or where you unzipped it).
+     2. Find your downloaded `debloat-poco.bat` file.
+     3. Right-click the `debloat-poco.bat` file and choose **Copy**.
+     4. In the `platform-tools` folder, right-click an empty area and choose **Paste**.
+     5. Make sure `debloat-poco.bat` is inside the same folder as `adb.exe`.
 
 3.  **Execute:**
     * Enable **USB Debugging** on your phone & connect to PC.
@@ -169,12 +169,12 @@ Tidak perlu ketik kode, cukup klik file `.bat` saja.
     * Download file `debloat-poco.bat` dari menu **[Releases](https://github.com/Shaozaki/Debloater-Poco-C65/releases)** di repo ini.
     * ⚠️ **PENTING:** Pindahkan file `debloat-poco.bat` ke **DALAM** folder `platform-tools` tadi (harus satu folder dengan file `adb.exe`).
 
-    > **Cara Memindahkan file `.bat` ke folder `platform-tools`:**
-    > 1. Buka folder hasil ekstrak `platform-tools` (biasanya di Downloads atau tempat ekstrak ZIP).
-    > 2. Temukan file `debloat-poco.bat` yang sudah di-download.
-    > 3. Klik kanan pada file `debloat-poco.bat` lalu pilih **Copy**.
-    > 4. Buka folder `platform-tools`, klik kanan di area kosong lalu pilih **Paste**.
-    > 5. Pastikan file `debloat-poco.bat` ada di tempat yang sama dengan `adb.exe`.
+     **Cara Memindahkan file `.bat` ke folder `platform-tools`:**
+     1. Buka folder hasil ekstrak `platform-tools` (biasanya di Downloads atau tempat ekstrak ZIP).
+     2. Temukan file `debloat-poco.bat` yang sudah di-download.
+     3. Klik kanan pada file `debloat-poco.bat` lalu pilih **Copy**.
+     4. Buka folder `platform-tools`, klik kanan di area kosong lalu pilih **Paste**.
+     5. Pastikan file `debloat-poco.bat` ada di tempat yang sama dengan `adb.exe`.
 
 3.  **Eksekusi:**
     * Aktifkan **USB Debugging** di HP & colok ke Laptop.
