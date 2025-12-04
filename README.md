@@ -11,7 +11,7 @@
 <a name="english"></a>
 ## 🇬🇧 English Description
 
-A simple, safe, and effective script to remove bloatware, system ads, and performance throttling on **Poco C65**. Crafted for HyperOS/MIUI users who want a faster, cooler device with better gaming performance (e.g., Arknights, Mobile Legends).
+A simple, safe, and effective script to remove bloatware, system ads, and performance throttling on **Poco C65**. Crafted for HyperOS/MIUI users who want a faster, cooler device with better gaming per[...]  
 
 ### 📦 Key Features
 * **Remove Ads:** Kills MSA (MIUI System Ads) and Analytics.
@@ -81,7 +81,7 @@ You don't need a terminal, just use the provided `.bat` file.
     * Download the official [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools) from Google.
     * Extract the ZIP file. You will get a folder named `platform-tools`.
 2.  **Download Script:**
-    * Download the `debloat-poco.bat` file from the **[Releases]** section of this repo.
+    * Download the `debloat-poco.bat` file from the **[Releases](https://github.com/Shaozaki/Debloater-Poco-C65/releases)** section of this repo.
     * ⚠️ **IMPORTANT:** Move the `debloat-poco.bat` file **INSIDE** the `platform-tools` folder (it must be in the same folder as `adb.exe`).
 3.  **Execute:**
     * Enable **USB Debugging** on your phone & connect to PC.
@@ -159,7 +159,7 @@ Tidak perlu ketik kode, cukup klik file `.bat` saja.
     * Download [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools) resmi dari Google.
     * Ekstrak file ZIP-nya. Kamu akan mendapat folder bernama `platform-tools`.
 2.  **Download Script:**
-    * Download file `debloat-poco.bat` dari menu **[Releases]** di repo ini.
+    * Download file `debloat-poco.bat` dari menu **[Releases](https://github.com/Shaozaki/Debloater-Poco-C65/releases)** di repo ini.
     * ⚠️ **PENTING:** Pindahkan file `debloat-poco.bat` ke **DALAM** folder `platform-tools` tadi (harus satu folder dengan file `adb.exe`).
 3.  **Eksekusi:**
     * Aktifkan **USB Debugging** di HP & colok ke Laptop.
