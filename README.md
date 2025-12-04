@@ -11,8 +11,7 @@
 <a name="english"></a>
 ## 🇬🇧 English Description
 
-A simple, safe, and effective script to remove bloatware, system ads, and performance throttling on **Poco C65**. Crafted for HyperOS/MIUI users who want a faster, cooler device with better gaming per[...]  
-
+A simple, safe, and effective script to remove bloatware, system ads, and performance throttling on **Poco C65**. Crafted for HyperOS/MIUI users who want a faster, cooler device with better gaming performance
 ### 📦 Key Features
 * **Remove Ads:** Kills MSA (MIUI System Ads) and Analytics.
 * **Boost Gaming:** Removes `Joyose` (thermal throttling service) to stabilize FPS.
