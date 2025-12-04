@@ -2,114 +2,176 @@
 
 [English](#english) | [Bahasa Indonesia](#bahasa-indonesia)
 
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)
+![Device](https://img.shields.io/badge/Device-Poco%20C65%20(Helio%20G85)-orange)
+![Safety](https://img.shields.io/badge/Safety-100%25%20Safe%20(User%20Space)-green)
+
 ---
 
 <a name="english"></a>
 ## 🇬🇧 English Description
 
-A simple yet effective script to remove bloatware, system ads, and performance throttling on **Poco C65 (Helio G85)**.
-Specifically crafted for HyperOS/MIUI users who want a lighter, faster, and cooler device for gaming (e.g., Arknights, Mobile Legends).
+A simple, safe, and effective script to remove bloatware, system ads, and performance throttling on **Poco C65**. Crafted for HyperOS/MIUI users who want a faster, cooler device with better gaming performance (e.g., Arknights, Mobile Legends).
 
-### 🤔 Why use this?
-Although Xiaomi hardware is great, the software is often held back by:
-- **System Ads (MSA)** running in the background.
-- **Joyose** throttling performance during gaming (causing FPS drops).
-- **Facebook Services** draining battery in the background.
+### 📦 Key Features
+* **Remove Ads:** Kills MSA (MIUI System Ads) and Analytics.
+* **Boost Gaming:** Removes `Joyose` (thermal throttling service) to stabilize FPS.
+* **Save Battery:** Disables background Facebook services.
+* **Clean UI:** Removes bloatware browsers and video players.
 
-This script is **100% Safe** (Safe Mode). It only uninstalls apps for the current user (`user 0`) without touching the system partition, so it won't cause bootloops.
+---
 
-### 📦 What gets removed?
-- **Ads & Trackers:** `msa` (MIUI System Ads), `analytics`.
-- **Performance Throttling:** `joyose` (Removing this stabilizes gaming FPS).
-- **Bloatware:** `Mi Browser`, `GetApps`, `Mi Video`, `Yellow Pages`.
-- **Background Drainers:** `Facebook App Manager`, `Facebook Services` (Main Facebook app is safe).
+## 🛠️ Installation & Usage
 
-### 🛠️ How to Use
+Choose the guide according to your computer's operating system:
 
-#### 🐧 Linux (Debian, Ubuntu, Arch, CachyOS)
+### 🍎 macOS Users
 
-1. Install ADB tools:
-   - Debian/Ubuntu: `sudo apt install adb`
-   - Arch/CachyOS: `sudo pacman -S android-tools`
-2. Enable **USB Debugging** on your phone & connect to PC.
-3. Clone and run:
-   ```bash
-   git clone https://github.com/Shaozaki/Debloater-Poco-C65.git
-   cd Debloater-Poco-C65
-   chmod +x debloat-poco.sh
-   ./debloat-poco.sh
-   ```
+1.  **Install ADB (Android Debug Bridge):**
+    Open Terminal (Cmd + Space, type "Terminal") and run:
+    ```zsh
+    # Using Homebrew (Recommended)
+    brew install --cask android-platform-tools
 
-#### 🪟 Windows Users
+    # Verify installation
+    adb version
+    ```
+2.  **Prepare Phone:**
+    * Enable **Developer Options** (Tap 'OS Version' 7x in Settings).
+    * Enable **USB Debugging**.
+    * Connect phone to Mac via USB. Allow access on the phone screen.
+3.  **Run Script:**
+    ```zsh
+    git clone https://github.com/Shaozaki/Debloater-Poco-C65.git
+    cd poco-c65-debloater
+    chmod +x debloat-poco.sh
+    ./debloat-poco.sh
+    ```
 
-If you are on Windows 10/11, you don't need to use the terminal. Just use the provided `.bat` file.
+### 🐧 Linux Users (CachyOS, Arch, Debian, Ubuntu)
 
-**Steps:**
+1.  **Install Dependencies:**
+    * **Arch Linux / CachyOS / Manjaro:**
+        ```bash
+        sudo pacman -S android-tools
+        ```
+    * **Ubuntu / Debian / Kali / Mint:**
+        ```bash
+        sudo apt update && sudo apt install adb fastboot
+        ```
+    * **Fedora:**
+        ```bash
+        sudo dnf install android-tools
+        ```
+2.  **Run Script:**
+    * Enable **USB Debugging** on your phone.
+    * Run these commands in your terminal:
+        ```bash
+        git clone https://github.com/Shaozaki/Debloater-Poco-C65.git
+        cd poco-c65-debloater
+        chmod +x debloat-poco.sh
+        ./debloat-poco.sh
+        ```
+
+### 🪟 Windows Users (10/11)
+
+You don't need a terminal, just use the provided `.bat` file.
 
 1.  **Prepare ADB:**
-    * Download [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools) from the official Android website.
-    * Extract (unzip) the downloaded file. You will get a folder named `platform-tools`.
-
+    * Download the official [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools) from Google.
+    * Extract the ZIP file. You will get a folder named `platform-tools`.
 2.  **Download Script:**
-    * Go to the **Releases** page of this repo and download `debloat-poco.bat`.
+    * Download the `debloat-poco.bat` file from the **[Releases]** section of this repo.
     * ⚠️ **IMPORTANT:** Move the `debloat-poco.bat` file **INSIDE** the `platform-tools` folder (it must be in the same folder as `adb.exe`).
-
-3.  **Run:**
-    * Enable **USB Debugging** on your Poco C65 and connect it to your PC.
+3.  **Execute:**
+    * Enable **USB Debugging** on your phone & connect to PC.
     * Open the `platform-tools` folder.
     * Double-click on `debloat-poco.bat`.
-    * A command window will appear and start the cleaning process automatically.
-    * Wait until finished, then restart your phone.
+    * A command window will appear and process automatically.
+
+---
 
 <a name="bahasa-indonesia"></a>
 ## 🇮🇩 Bahasa Indonesia
 
-#### 🐧 Linux Users (CachyOS, Arch, Ubuntu, dll)
+Script otomatis untuk membersihkan **Poco C65** (dan HP Xiaomi lain dengan HyperOS/MIUI) dari aplikasi sampah (bloatware), iklan sistem, dan pembatas performa.
 
-Script ini berjalan secara native menggunakan terminal.
+### 🧐 Apa saja yang dihapus?
+* **Iklan:** Menghapus MSA (sumber iklan sistem) dan Analytics.
+* **Performa Gaming:** Menghapus `Joyose` (penyebab FPS drop saat main game berat).
+* **Baterai:** Mematikan service Facebook di background.
+* **Bersih-bersih:** Menghapus Browser bawaan, Mi Video, dll.
 
-**Langkah-langkah:**
+---
+
+## 🛠️ Cara Install & Pakai
+
+Pilih panduan sesuai sistem operasi Laptop/PC kamu:
+
+### 🍎 Pengguna macOS
 
 1.  **Install ADB:**
-    * **Arch Linux / CachyOS:**
-      ```bash
-      sudo pacman -S android-tools
-      ```
-    * **Ubuntu / Debian / Linux Mint:**
-      ```bash
-      sudo apt update && sudo apt install adb
-      ```
+    Buka Terminal dan jalankan perintah ini (pastikan sudah punya Homebrew):
+    ```zsh
+    brew install --cask android-platform-tools
+    ```
+2.  **Siapkan HP:**
+    * Aktifkan **Opsi Pengembang** & **USB Debugging**.
+    * Sambungkan HP ke Mac. Izinkan akses debug di layar HP.
+3.  **Jalankan Script:**
+    ```zsh
+    git clone https://github.com/Shaozaki/Debloater-Poco-C65.git
+    cd poco-c65-debloater
+    chmod +x debloat-poco.sh
+    ./debloat-poco.sh
+    ```
 
+### 🐧 Pengguna Linux (CachyOS, Arch, Debian, Ubuntu)
+
+1.  **Install Dependencies (Alat Pendukung):**
+    * **Arch Linux / CachyOS / Manjaro:**
+        ```bash
+        sudo pacman -S android-tools
+        ```
+    * **Ubuntu / Debian / Kali / Mint:**
+        ```bash
+        sudo apt update && sudo apt install adb fastboot
+        ```
+    * **Fedora:**
+        ```bash
+        sudo dnf install android-tools
+        ```
 2.  **Jalankan Script:**
-    * Aktifkan **USB Debugging** di HP dan sambungkan ke Laptop.
-    * Clone repo ini dan jalankan scriptnya:
-      ```bash
-      git clone https://github.com/Shaozaki/Debloater-Poco-C65.git
-      cd Debloater-Poco-C65
-      
-      # Beri izin eksekusi
-      chmod +x debloat-poco.sh
-      
-      # Jalankan
-      ./debloat-poco.sh
-      ```
-### 🪟 Panduan Pengguna Windows
+    * Pastikan **USB Debugging** di HP sudah aktif.
+    * Ketik perintah ini di terminal:
+        ```bash
+        git clone https://github.com/Shaozaki/Debloater-Poco-C65.git
+        cd poco-c65-debloater
+        chmod +x debloat-poco.sh
+        ./debloat-poco.sh
+        ```
 
-Jika kamu menggunakan Windows 10 atau 11, kamu tidak perlu mengetik kode di terminal. Cukup gunakan file `.bat` yang sudah disediakan.
+### 🪟 Pengguna Windows (10/11)
 
-**Langkah-langkah:**
+Tidak perlu ketik kode, cukup klik file `.bat` saja.
 
 1.  **Siapkan ADB:**
-    * Download [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools) dari website resmi Android.
-    * Ekstrak (unzip) file yang didownload tadi. Kamu akan mendapatkan folder bernama `platform-tools`.
-
+    * Download [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools) resmi dari Google.
+    * Ekstrak file ZIP-nya. Kamu akan mendapat folder bernama `platform-tools`.
 2.  **Download Script:**
-    * Download file `debloat-poco.bat` dari menu **Releases** di repo ini (atau klik tombol Download Raw).
-    * ⚠️ **PENTING:** Pindahkan file `debloat-poco.bat` ke **DALAM** folder `platform-tools` tadi (satu folder dengan file `adb.exe`).
-
+    * Download file `debloat-poco.bat` dari menu **[Releases]** di repo ini.
+    * ⚠️ **PENTING:** Pindahkan file `debloat-poco.bat` ke **DALAM** folder `platform-tools` tadi (harus satu folder dengan file `adb.exe`).
 3.  **Eksekusi:**
-    * Aktifkan **USB Debugging** di HP Poco C65 kamu dan sambungkan ke Laptop dengan kabel USB.
+    * Aktifkan **USB Debugging** di HP & colok ke Laptop.
     * Buka folder `platform-tools`.
-    * Klik dua kali (double click) pada file `debloat-poco.bat`.
-    * Sebuah jendela hitam (CMD) akan muncul dan menjalankan proses pembersihan otomatis.
-    * Tunggu sampai selesai dan HP siap direstart.
+    * Klik dua kali (Double Click) pada file `debloat-poco.bat`.
+    * Jendela hitam (CMD) akan muncul dan membersihkan HP secara otomatis.
+
+---
+
+### ⚠️ Disclaimer / Penafian
+**Do With Your Own Risk.** Script ini aman (Safe Mode) karena hanya menghapus aplikasi untuk pengguna saat ini (*User 0*) tanpa menyentuh file sistem asli. HP **TIDAK AKAN BOOTLOOP**.
+Jika ingin mengembalikan aplikasi yang terhapus, cukup lakukan **Factory Reset** atau install ulang via ADB.
+
+---
+*Made by shaozaki*
